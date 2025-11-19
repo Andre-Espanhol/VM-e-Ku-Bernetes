@@ -14,9 +14,9 @@ jobs:
     - name: Run remote deploy script via SSH
       uses: appleboy/ssh-action@v0.1.7
       with:
-        host: ${{ secrets.VM_HOST }}         # IP público
-        username: ${{ secrets.VM_USER }}
-        password: ${{ secrets.VM_PASSWORD }} # ou use chave privada com private_key
+        host: ${{ secrets.20.63.72.131 }}         # IP público
+        username: ${{ secrets.batata }}
+        password: ${{ secrets.@abc12345678 }} # ou use chave privada com private_key
         port: 22
         script: |
           cd /home/${{ secrets.VM_USER }}/deploy
